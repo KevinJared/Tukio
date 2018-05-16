@@ -1,12 +1,18 @@
+a{
+    text-decoration: none;
+}
 .topnav{
-  height: 40px;
+  height: 45px;
   padding: 5px;
   display: inline-block;
   width: 100%;
   position:fixed;
    z-index: 1;
 }
-
+.topnav p{
+  text-align: center;
+  margin-top: 0;
+}
 .topnav a{
     font-size: 16px;
     font-family: 'Comfortaa', cursive;
@@ -26,7 +32,6 @@
 }
 .header h1{
   font-size: 50px;
-
 }
 .search{
   color: red;
@@ -52,8 +57,20 @@
   animation: shake 0.5s;
   animation-iteration-count: infinite;
   box-shadow: 0 20px 20px 0 rgba(255,0,0, 0.2), 0 6px 20px 0 rgba(255,0,0, 0.19);
+  opacity: 0.7;
 }
-.getstarted{
+.section p{
+  font-size: 34px;
+  color: #09efcd;
+  font-family: 'Indie Flower', cursive;
+  float: right;
+}
+.section p:hover{
+    -webkit-transition: color 0.5s;
+    color: #ff0000;
+}
+.getstarted a{
+  color: blue;
   width:300px;
   text-align: center;
   height: 70px;
@@ -61,9 +78,7 @@
   background-color: #42f44b;
   border-radius: 15px 50px;
   box-shadow: 10px 10px 8px #888888;
-}
-.getstarted a{
-  color: blue;
+  float: left;
 }
 .container-fluid{
   padding: 20px;
@@ -120,6 +135,14 @@ input[type=text]{
 .articles{
   height: 120vh;
   padding-left: 40px;
+}
+.articles2{
+  padding-left: 40px;
+}
+.articles2 p {
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
 }
 .ads{
   height: 35vh;

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,13 +25,22 @@
           <button type="submit"><i class="fa fa-search">Search</i></button>
         </form>
       </div>
+      <p><strong>TIME:</strong><span id="datetime"></span></p>
+      <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+      </script>
     </div>
 
-    <div id="snow" class="section" style="background-image: url(image/cover.jpg);">
-      <img src="image/logo.png" alt="" width="300px" style="border-radius: 50%";>
-      <h1>2Kio Events</h1>
+    <div class="section" style="background-image: url(image/cover.jpg);">
+      <div class="">
+        <img id="myImg" src="image/logo.png" alt="" width="300px" style="border-radius: 50%";>
+        <h1>2Kio Events</h1>
+      </div>
       <br>
-      <p>"Challenge yourself by taking part in an organised event and achieve your personal Goals"</p>
+      <div>
+        <p>"Challenge yourself by taking <br>part in an organised event and <br> achieve your personal Goals"</p>
+      </div>
       <br>
       <div class="getstarted">
         <a href="home.html">Get Started</a>
