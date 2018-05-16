@@ -3,9 +3,12 @@
   padding: 5px;
   display: inline-block;
   width: 100%;
+<<<<<<< HEAD
   position:fixed;
    z-index: 1;
 }
+=======
+>>>>>>> e4d10196c60c7acaa02bd7176adc7d3182eb1646
 
 .topnav a{
     font-size: 16px;
@@ -26,7 +29,10 @@
 }
 .header h1{
   font-size: 50px;
+<<<<<<< HEAD
   text-shadow: 2px 2px #ff0000;
+=======
+>>>>>>> e4d10196c60c7acaa02bd7176adc7d3182eb1646
 }
 .search{
   color: red;
@@ -38,6 +44,7 @@
   background-color: #ebebe0;
 }
 .btn{
+<<<<<<< HEAD
   width: 60%;
   height: 50px;
   background-color: #4CAF50;
@@ -57,12 +64,17 @@
   color: white;
   font-size: 24px;
   border-radius: 10px;
+=======
+  width: 50%;
+  height: 50px;
+>>>>>>> e4d10196c60c7acaa02bd7176adc7d3182eb1646
 }
 #sidebar{
   border-right: solid #4ddbff;
 }
 h2{
   text-align: center;
+<<<<<<< HEAD
 }
 .footer{
     padding-top: 20px;
@@ -91,6 +103,8 @@ input[type=text]{
   background-color: white;
   text-align: center;
   padding: 0px;
+=======
+>>>>>>> e4d10196c60c7acaa02bd7176adc7d3182eb1646
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
