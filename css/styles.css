@@ -44,6 +44,98 @@
   color: white;
   font-size: 24px;
 }
+.technology{
+  font-size: 35px;
+  font-family: 'Nosifer', cursive;
+  text-decoration-line: underline;
+  color: black;
+}
+.event1{
+  font-size: 18px;
+  color: black;
+}
+.event2{
+  font-size: 18px;
+  color: black;
+}
+.event3{
+  font-size: 18px;
+  color: black;
+}
+.event4{
+  font-size: 18px;
+  color:black;
+}
+#EVENT1{
+  text-align: center;
+  padding-top:20px;
+}
+#EVENT2{
+  text-align: center;
+  padding-left: 300px;
+}
+#EVENT3{
+  text-align: center;
+  padding-top: 20px;
+}
+#EVENT4{
+text-align: center;
+padding-left: 300px;
+}
+.event1{
+  padding-top: 20px;
+}
+.event2{
+  margin-top: 0px;
+}
+.container-fluid{
+  background-image: url(/home/gift/Documents/Tukio/image/event2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  opacity: 2.5;
+}
+.about2kio{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Nosifer', cursive;
+  text-decoration-line: underline;
+}
+#description{
+  color:#d24401;
+  text-align: center;
+}
+.list{
+  font-size: 19px;
+  text-align: center;
+}
+.lists{
+  color: black;
+}
+.techused{
+  font-size: 32px;
+  color: rgb(20, 131, 20);
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+.description{
+  font-size: 32px;
+  color: rgb(20, 131, 20);
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+.paragraphs{
+  font-size: 20px;
+  font-style: italic;
+}
+.contributers{
+  font-size: 32px;
+  color: rgb(20, 131, 20);
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
 .events p{
   font-family: 'Nosifer', cursive;
   text-align: center;
@@ -63,6 +155,25 @@
 }
 h2{
   text-align: center;
+}
+.container{
+  border-radius: 40px;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: white;
+  opacity: 0.8;
+}
+#gift{
+  size: 50px;
+}
+.kev{
+
+}
+.edith{
+
+}
+.karis{
+
 }
 .footer{
     padding-top: 20px;
