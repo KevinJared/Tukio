@@ -13,6 +13,7 @@
     padding-left: 30px;
 }
 
+}
 .header{
   height:420px;
   padding: 40px;
@@ -149,6 +150,8 @@ padding-left: 300px;
   color: white;
   font-size: 24px;
   border-radius: 10px;
+  width: 50%;
+  height: 50px;
 }
 #sidebar{
   border-right: solid #4ddbff;
@@ -156,6 +159,7 @@ padding-left: 300px;
 h2{
   text-align: center;
 }
+HEAD
 .container{
   border-radius: 40px;
   padding-left: 20%;
