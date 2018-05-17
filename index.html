@@ -7,49 +7,56 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>2Kio</title>
   </head>
   <body>
     <div class="topnav" style="background-color: #d6d6c2">
-        <a href="#">HOME</a> &nbsp &nbsp &nbsp
-        <a href="#">ABOUT</a>
+        <a href="home.html">HOME</a> &nbsp &nbsp &nbsp
+        <a href="about.html">ABOUT</a>
       <div class="search">
         <form action="https://devcentral.f5.com/questions/sorry-page-26743">
-          <input type="text" placeholder="Search.." name="search">
+          <input type="text1" placeholder="Search.." name="search">
           <button type="submit"><i class="fa fa-search">Search</i></button>
         </form>
       </div>
-    </div>
-    <div class="header" style="background-image: url(image/event1.jpg)">
-      <img src="image/logo.png" alt="" width="160px" style="border-radius: 50%";>
-      <h1>2Kio Events</h1>
+      <p><strong>TIME:</strong><span id="datetime"></span></p>
+      <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+      </script>
     </div>
 
-    <!--this is the begining of section -->
-    <div class="container-fluid">
-      <div class="row">
-        <div id="sidebar" class="col-md-3">
-          <div class="btn-create-event">
-            <button class="btn" type="button" name="button">CREATE EVENT</button>
-          </div>
-          <br>
-          <br>
-          <div class="btn-join">
-            <button class="btn" type="button" name="button">JOIN EVENT</button>
-          </div>
-          <div class="events">
-            <h2>EVENTS</h2>
-          </div>
-        </div>
-
-        <div class="col-md-9">
-          <h2>SECTION</h2>
-        </div>
+    <div class="section" style="background-image: url(image/cover.jpg);">
+      <div class="">
+        <img id="myImg" src="image/logo.png" alt="" width="300px" style="border-radius: 50%";>
+        <h1>2Kio Events</h1>
       </div>
-
+      <br>
+      <div>
+        <p>"Challenge yourself by taking <br>part in an organised event and <br> achieve your personal Goals"</p>
+      </div>
+      <br>
+      <div class="getstarted">
+        <a href="home.html">Get Started</a>
+      </div>
     </div>
+      <!--this is the end of section -->
 
-
-<!--this is the end of section -->
+      <!--this is the begining of footer -->
+          <div class="social">
+            <h3>Contacts</h3>
+              <a href="#"><img src="image/facebook.png" alt="facebook" width="50"></a>
+              <a href="#"><img src="image/twitter.png" alt="twitter" width="50"></a>
+              <a href="#"><img src="image/pinterest.png" alt="pinterest" width="50"></a>
+              <br>
+              <h4>Copyright &copy Tukio 2018</h4>
+          </div>
+      <!--this is the begining of footer -->
   </body>
 </html>
