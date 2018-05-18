@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <title>2Kio</title>
   </head>
   <body>
@@ -34,7 +35,41 @@
       <div class="row">
         <div id="sidebar" class="col-md-2">
           <div class="btn-create-event">
-            <button class="btn" type="button" name="button">CREATE EVENT</button>
+            <button class="btncreate" class="btn" type="button" name="button">CREATE EVENT</button>
+            <div class="content">
+            <form action="" method="get" target="_blank">
+              <p>CATEGORY:<select name="#">
+                <option value="#">EDUCATION</option>
+                <option value="#">ART</option>
+                <option value="#">TECHNOLOGY</option>
+                <option value="#">HEALTH</option>
+                <option value="#">RELIGION</option>
+                <option value="#">SPORTS</option>
+              </select><br></p>
+              <p>IMAGE: <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 accept="image/*"></p>
+              <p>NAME OF EVENT:<input type="text2" name="#"><br></p>
+              <p>LOCATION: &nbsp &nbsp<input type="text2" name="#"><br></p>
+              <p>Event Description:<input type="text2" name="#"><br></p>
+              <p>CHARGES:<input type="text2" name="#"><br></p>
+              <input onClick="conf()" type="submit" value="Submit">
+              </form>
+            </div>
+            <script>
+              var coll = document.getElementsByClassName("btncreate");
+              var i;
+
+              for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var content = this.nextElementSibling;
+                      if (content.style.display === "block") {
+                          content.style.display = "none";
+                      } else {
+                          content.style.display = "block";
+                      }
+                  });
+              }
+              </script>
           </div>
           <br>
           <br>
@@ -54,7 +89,8 @@
             <div class="articles2" class="col-md-12">
               <br>
               <br>
-                <p>The key to building a strong foundation before launching your product or service is to take the time to think about <br> your ideal audience, the problems they face, how you can solve those problems, the positive impact you have on their lives and how you are going to help them in a way that’s different <br> from the competition. These steps are essential pieces to developing clear and valuable product messaging. <br> Not only will be your "partners" clearly understand what you offer, but your team will thank you when they are confidently delivering a consistent story when speaking with others.</p>
+              <h3>Preview</h3>
+                <p>"The key to building a strong foundation before launching your product or service is to take the time  <br>  to think about your ideal audience, the problems they face, how you can solve those problems, the positive impact you have on their lives and how you are going to help them in a way that’s different <br> from the competition. These steps are essential pieces to developing clear and valuable product messaging. <br> Not only will be your "partners" clearly understand what you offer, but your team will thank you when they are confidently delivering a consistent story when speaking with others."</p>
             </div>
           </div>
           <div class="row">
@@ -100,7 +136,7 @@
               <br>
               Comment:<input type="text" placeholder="Comment.." name="Feedback">
               <br>
-              <button type="button" name="button">SUBMIT</button>
+              <button onClick="conf()" type="button" name="button">SUBMIT</button>
             </form>
           </div>
           <div class="col-md-4" id="social">

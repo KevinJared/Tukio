@@ -25,7 +25,7 @@
         </form>
       </div>
     </div>
-    <div class="header" style="background-image: url(image/artart.jpg)">
+    <div class="header" style="background-image: url(image/technology.jpg)">
       <img src="image/logo.png" alt="" width="160px" style="border-radius: 50%";>
       <h1>2Kio Events</h1>
     </div>
@@ -72,44 +72,46 @@
           </div>
           <br>
           <br>
+          <br>
           <div class="events">
             <p class="events">EVENTS</p>
-              <a href="education.html"><button class="btn2" type="button" name="button">EDUCATION</button></a>&nbsp
-              <a href="art.html"><button class="btn2" type="button" name="button">ART</button></a>&nbsp
-              <a href="technology.html"><button class="btn2" type="button" name="button">TECHNOLOGY</button></a>&nbsp
-              <a href="health.html"><button class="btn2" type="button" name="button">HEALTH</button></a>&nbsp
-              <a href="religion.html"><button class="btn2" type="button" name="button">RELIGION</button></a>&nbsp
-              <a href="sports.html"><button class="btn2" type="button" name="button">SPORTS</button></a>&nbsp
+            <a href="education.html"><button class="btn2" type="button" name="button">EDUCATION</button></a> &nbsp
+            <a href="art.html"><button class="btn2" type="button" name="button">ART</button></a> &nbsp
+            <a href="technology.html"><button class="btn2" type="button" name="button">TECHNOLOGY</button></a> &nbsp
+            <a href="health.html"><button class="btn2" type="button" name="button">HEALTH</button></a> &nbsp
+            <a href="religion.html"><button class="btn2" type="button" name="button">RELIGION</button></a> &nbsp
+            <a href="sports.html"><button class="btn2" type="button" name="button">SPORTS</button></a> &nbsp
           </div>
         </div>
+
         <div class="col-md-10">
           <div class="row">
-            <div class="art" class="col-md-12">
-              <h2><b>ART</b></h2>
+            <div class="tech" class="col-md-12">
+              <p class="technology"><b>TECHNOLOGY EVENTS</b></p>
               <br>
                 <div class="col-md-2">
-                  <p class="event1"><b>1.CULTURAL DAY</b></p>
-                  <img src="image/art/art1.jpg" alt="" width="200">
+                  <p class="event1"><b>1.The Data Science Expo 2018</b></p>
+                  <img src="image/technology/data Science.jpg" width="200px;" height="200px;"alt="">
                 </div>
                 <div id="EVENT1">
                   <div class="col-md-3">
                     <ul>
-                      <li><b>Date and Time</b></li>
+                      <li class="lists"><b>Date and Time</b></li>
                       <p>Saturday,19th May 2018</p>
                       <p>10:00am-5:30pm</p>
                       <br>
-                      <li><b>Location:</b></li>
-                      <p>Green Tea Hotel</p>
-                      <p>Kaplong</p>
-                      <p>BOMET,Bomet County</p>
-                      <a href="">View Map</a>
+                      <li class="lists"><b>Location:</b></li>
+                      <p>BEST WESTERN Plus Meridian Hotel</p>
+                      <p>Murang'a Road</p>
+                      <p>Nairobi,Nairobi County</p>
+                      <a href="https://www.google.com/maps/place/BEST+WESTERN+Plus+Meridian+Hotel/@-1.2806726,36.8189649,17z/data=!3m1!4b1!4m7!3m6!1s0x182f10d4e8b92bcb:0x7bf1a52ea7a2c7c1!5m1!1s2018-05-20!8m2!3d-1.2806726!4d36.8211589">View Map</a>
                       <br>
-                      <br>
-                      <li><b>Event Description</b></li>
+                      <li class="lists"><b>Event Description</b></li>
                       <p>This event brings together people from diverse backgrounds with different characters and personalities doing awesome stuff with Data Science.</p>
                       <br>
-                      <li><b>Charges:</b></li>
+                      <li class="lists"><b>Charges:</b></li>
                       <p>Free</p>
+                      <br>
                       <div class="joinbutton">
                         <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
                         <div id="btn-join" class="modal">
@@ -121,99 +123,121 @@
                             <input type="submit" value="Submit">
                           </form>
                         </div>
+                        <script type="text/javascript">
+                            // Get the btn-join
+                            var modal = document.getElementById('btn-join');
 
+                            // Get the button that opens the btn-join
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the btn-join
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the btn-join
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+                            // When the user clicks on <span> (x), close the btn-join
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+                            // When the user clicks anywhere outside of the btn-join, close it
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                        </script>
                       </div>
                     </ul>
-                    </div>
                   </div>
+                </div>
                   <div class="col-md-2">
-                    <p class="event2"><b>2.Art exhibition</b></p>
-                    <img src="image/art/art3.jpg" alt="" width="200">
+                    <p class="event2"><b>2.Tech & Innovation for Employment</b></p>
+                    <img src="image/technology/tech innov.jpg" width="200px;" height="200px;"alt="">
                   </div>
                   <div id="EVENT2">
                     <div class="col-md-3">
                       <ul>
-                        <li><b>Date and Time</b></li>
+                        <li class="lists"><b>Date and Time</b></li>
                         <p>Wednesday,23rd May 2018</p>
                         <p>3:00pm-8:30pm</p>
-                        <br>
-                        <li><b>Location:</b></li>
-                        <p>weston hotel</p>
+                        <li class="lists"><b>Location:</b></li>
+                        <p>The Panari Hotel</p>
                         <p>Mombasa Road</p>
                         <p>Nairobi,Nairobi County</p>
-                        <a href="">View Map</a>
+                        <a href="https://www.google.com/maps/place/Panari+Group/@-1.3288473,36.8537128,17z/data=!3m1!4b1!4m7!3m6!1s0x182f10ef7e2b0aa1:0xe91e93be849a121b!5m1!1s2018-06-01!8m2!3d-1.3288473!4d36.8559068">View Map</a>
                         <br>
-                        <br>
-                        <li><b>Event Description:</b></li>
-                        <p>This is an event that will bring together top and highly qualified leaders in technology and innovation to employ the youth in Kenya.</p>
-                        <li><b>Charges:</b></li>
+                        <li class="lists"><b>Event Description:</b></li>
+                        <p>This is an event that will bring together top and highly qualified leaders in technology and innovation to employ the youth in Kenya.The event will look at how technology and innovation solutions can change the lives of the youth</p>
+                        <li class="lists"><b>Charges:</b></li>
                         <p>Absolutely Free for all</p>
+                        <br>
                         <div class="btn-join">
-                          <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
-                        </div>
+                            <button class="btn" type="button" name="button">JOIN EVENT</button>
+                          </div>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
+              <br>
+              <br>
               <div class="col-md-2">
-                  <p class="event3"><b>3.paiting competition</b></p>
-                  <img src="image/art/art4.jpg" alt="" width="200">
+                  <p class="event3"><b>3.Git Fundamentals For Modern Developers</b></p>
+                  <img src="image/technology/GIT.jpg" width="200px;" height="200px;"alt="">
                 </div>
                 <div id="EVENT3">
                   <div class="col-md-3">
                     <ul>
-                      <li><b>Date and Time</b></li>
+                      <li class="lists"><b>Date and Time</b></li>
                       <p>Saturday,26th May 2018</p>
                       <p>6:30am-8:30pm</p>
-                      <li><b>Location:</b></li>
+                      <li class="lists"><b>Location:</b></li>
                       <p>Moringa School,</p>
                       <p>Ngong Lane Plaza,Ngong Road</p>
                       <p>Nairobi,Nairobi County</p>
-                      <a href="">View Map</a>
+                      <a href="https://www.google.com/maps/place/Moringa+School/@-1.3005085,36.7824132,17z/data=!3m1!4b1!4m5!3m4!1s0x182f1a6bf7445dc1:0x940b62a3c8efde4c!8m2!3d-1.3005085!4d36.7846072">View Map</a>
                       <br>
-                      <li><b>Event Description</b></li>
+                      <li class="lists"><b>Event Description</b></li>
                       <p>This event helps developers understand how to effectively use git tools to help them advance their careers.</p>
+                      <br>
                       <li><b>Charges:</b></li>
                       <p>Free for all</p>
-                    </ul>
-                    <div class="joinbutton">
-                      <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
-                      <div id="btn-join" class="modal">
-                        <span class="close">&times;</span>
-                        <form action="" method="get" target="_blank">
-                          <p>First name:<input type="text2" name="fname"><br></p>
-                          <p>Last name:<input type="text2" name="lname"><br></p>
-                          <p>Contact: &nbsp &nbsp<input type="text2" name="contact"><br></p>
-                          <input type="submit" value="Submit">
-                        </form>
+                      <br>
+                      <div class="btn-join">
+                          <button class="btn" type="button" name="button">JOIN EVENT</button>
                       </div>
-                    </div>
+                    </ul>
                   </div>
                 </div>
                   <div class="col-md-2">
                     <p class="event4"><b>4.Women In Tech Workshop 2018</b></p>
-                    <img src="image/art/art3.jpg" alt="" width="200">
+                    <img src="image/technology/git fundamental.jpg" width="200px;" height="200px;"alt="">
                   </div>
                   <div id="EVENT4">
                     <div class="col-md-3">
                       <ul>
-                        <li><b>Date and Time</b></li>
+                        <li class="lists"><b>Date and Time</b></li>
                         <p>Wednesday,30th May 2018</p>
                         <p>6:30pm-9:00pm</p>
-                        <li><b>Location:</b></li>
+                        <li class="lists"><b>Location:</b></li>
                         <p>Kenyatta International Conference Centre(KICC),</p>
                         <p>Harambee Ave,</p>
                         <p>Nairobi,Nairobi County.</p>
-                        <a href="">View Map</a>
+                        <a href="https://www.google.com/maps/place/Kenyatta+International+Conference+Centre/@-1.2883556,36.8210576,17z/data=!3m1!4b1!4m5!3m4!1s0x182f10d8486bd945:0x5846aa44b544448a!8m2!3d-1.2883556!4d36.8232516">View Map</a>
                         <br>
-                        <li><b>Event Description:</b></li>
+                        <li class="lists"><b>Event Description:</b></li>
                         <p>The purpose of this event is to bring together women from different diversities and backgrounds to promote technology among them in order to enhance and better their future lives.</p>
-                        <li><b>Charges:</b></li>
+                        <br>
+                        <li class="lists"><b>Charges:</b></li>
                         <p>Free</p>
                         <br>
+                        <div class="btn-join">
+                            <button class="btn" type="button" name="button">JOIN EVENT</button>
+                          </div>
+                        <br>
                       </ul>
-
                     </div>
                   </div>
                 </div>
@@ -243,9 +267,8 @@
                 </a>
             </div>
           </div>
-        </div>
-          <!-- END of Control -->
-        </div>
+              <!-- END of Control -->
+            </div>
       </div>
     </div>
       <!--this is the end of section -->
@@ -261,7 +284,7 @@
               <br>
               Comment:<input type="text" placeholder="Comment.." name="Feedback">
               <br>
-              <button type="button" name="button">SUBMIT</button>
+              <button onClick="conf()" type="button" name="button">SUBMIT</button>
             </form>
           </div>
           <div class="col-md-4" id="social">

@@ -17,7 +17,7 @@
   <body>
     <div class="topnav" style="background-color: #d6d6c2">
         <a href="home.html">HOME</a> &nbsp &nbsp &nbsp
-        <a href="about.html">ABOUT</a>
+        <a href="index.html">ABOUT</a>
       <div class="search">
         <form action="https://devcentral.f5.com/questions/sorry-page-26743">
           <input type="text1" placeholder="Search.." name="search">
@@ -25,7 +25,7 @@
         </form>
       </div>
     </div>
-    <div class="header" style="background-image: url(image/artart.jpg)">
+    <div class="header" style="background-image: url(image/education.jpg)">
       <img src="image/logo.png" alt="" width="160px" style="border-radius: 50%";>
       <h1>2Kio Events</h1>
     </div>
@@ -71,45 +71,44 @@
               </script>
           </div>
           <br>
-          <br>
           <div class="events">
             <p class="events">EVENTS</p>
-              <a href="education.html"><button class="btn2" type="button" name="button">EDUCATION</button></a>&nbsp
-              <a href="art.html"><button class="btn2" type="button" name="button">ART</button></a>&nbsp
-              <a href="technology.html"><button class="btn2" type="button" name="button">TECHNOLOGY</button></a>&nbsp
-              <a href="health.html"><button class="btn2" type="button" name="button">HEALTH</button></a>&nbsp
-              <a href="religion.html"><button class="btn2" type="button" name="button">RELIGION</button></a>&nbsp
-              <a href="sports.html"><button class="btn2" type="button" name="button">SPORTS</button></a>&nbsp
+            <a href="education.html"><button class="btn2" type="button" name="button">EDUCATION</button></a> &nbsp
+            <a href="art.html"><button class="btn2" type="button" name="button">ART</button></a> &nbsp
+            <a href="technology.html"><button class="btn2" type="button" name="button">TECHNOLOGY</button></a> &nbsp
+            <a href="health.html"><button class="btn2" type="button" name="button">HEALTH</button></a> &nbsp
+            <a href="religion.html"><button class="btn2" type="button" name="button">RELIGION</button></a> &nbsp
+            <a href="sports.html"><button class="btn2" type="button" name="button">SPORTS</button></a> &nbsp
           </div>
         </div>
         <div class="col-md-10">
           <div class="row">
-            <div class="art" class="col-md-12">
-              <h2><b>ART</b></h2>
+            <div class="edu" class="col-md-12">
+              <p class="education"><b>EDUCATIONAL EVENTS</b></p>
               <br>
                 <div class="col-md-2">
-                  <p class="event1"><b>1.CULTURAL DAY</b></p>
-                  <img src="image/art/art1.jpg" alt="" width="200">
+                  <p class="event1"><b>1.Sex Education Talk</b></p>
+                  <img src="image/edu/sex.jpg" width="200px" height="200px" alt="">
                 </div>
                 <div id="EVENT1">
                   <div class="col-md-3">
                     <ul>
                       <li><b>Date and Time</b></li>
-                      <p>Saturday,19th May 2018</p>
-                      <p>10:00am-5:30pm</p>
+                      <p>Friday,18th May 2018</p>
+                      <p>3:30pm-5:30pm</p>
                       <br>
                       <li><b>Location:</b></li>
-                      <p>Green Tea Hotel</p>
-                      <p>Kaplong</p>
-                      <p>BOMET,Bomet County</p>
+                      <p>Jamuhuri High School</p>
+                      <p>Nairobi,Nairobi County</p>
                       <a href="">View Map</a>
                       <br>
                       <br>
                       <li><b>Event Description</b></li>
-                      <p>This event brings together people from diverse backgrounds with different characters and personalities doing awesome stuff with Data Science.</p>
+                      <p>The talk is to teach high school students more about sex(i.e contraceptives,STIs and boundaries.)</p>
                       <br>
-                      <li><b>Charges:</b></li>
-                      <p>Free</p>
+                      <li><b>Requirements:</b></li>
+                      <p>It is free for anyone who wishes to attend !</p>
+                      <br>
                       <div class="joinbutton">
                         <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
                         <div id="btn-join" class="modal">
@@ -121,99 +120,125 @@
                             <input type="submit" value="Submit">
                           </form>
                         </div>
+                        <script type="text/javascript">
+                            // Get the btn-join
+                            var modal = document.getElementById('btn-join');
 
+                            // Get the button that opens the btn-join
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the btn-join
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the btn-join
+                            btn.onclick = function() {
+                              modal.style.display = "block";
+                            }
+                            // When the user clicks on <span> (x), close the btn-join
+                            span.onclick = function() {
+                              modal.style.display = "none";
+                            }
+                            // When the user clicks anywhere outside of the btn-join, close it
+                            window.onclick = function(event) {
+                              if (event.target == modal) {
+                                modal.style.display = "none";
+                              }
+                            }
+                        </script>
                       </div>
+                      <br>
                     </ul>
-                    </div>
                   </div>
+                </div>
                   <div class="col-md-2">
-                    <p class="event2"><b>2.Art exhibition</b></p>
-                    <img src="image/art/art3.jpg" alt="" width="200">
+                    <p class="event2"><b>2.Wildlife Conservation Research Expo</b></p>
+                    <img src="image/edu/wild.jpg" width="200px" height="200px" alt="">
                   </div>
                   <div id="EVENT2">
                     <div class="col-md-3">
                       <ul>
                         <li><b>Date and Time</b></li>
-                        <p>Wednesday,23rd May 2018</p>
-                        <p>3:00pm-8:30pm</p>
+                        <p>Wednesday,30th May 2018</p>
+                        <p>2:30pm-5:30pm</p>
                         <br>
                         <li><b>Location:</b></li>
-                        <p>weston hotel</p>
-                        <p>Mombasa Road</p>
+                        <p>The Bomas of Kenya</p>
                         <p>Nairobi,Nairobi County</p>
                         <a href="">View Map</a>
                         <br>
                         <br>
                         <li><b>Event Description:</b></li>
-                        <p>This is an event that will bring together top and highly qualified leaders in technology and innovation to employ the youth in Kenya.</p>
-                        <li><b>Charges:</b></li>
-                        <p>Absolutely Free for all</p>
+                        <p>The WCRE is to teach the people on how to conserve the wildlife of our beautiful nation.</p>
+                        <li><b>Requirements:</b></li>
+                        <p>You are not required to bring anything</p>
+                        <br>
                         <div class="btn-join">
-                          <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
+                          <button class="btn" type="button" name="button">JOIN EVENT</button>
                         </div>
+                        <br>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-2">
-                  <p class="event3"><b>3.paiting competition</b></p>
-                  <img src="image/art/art4.jpg" alt="" width="200">
+                  <p class="event3"><b>3.Global Warming Talk</b></p>
+                  <img src="image/edu/gw.jpg" width="200px" height="200px" alt="">
                 </div>
                 <div id="EVENT3">
                   <div class="col-md-3">
                     <ul>
                       <li><b>Date and Time</b></li>
-                      <p>Saturday,26th May 2018</p>
-                      <p>6:30am-8:30pm</p>
+                      <p>Saturday,16th June 2018</p>
+                      <p>8:30am-12:30pm</p>
+                      <br>
                       <li><b>Location:</b></li>
-                      <p>Moringa School,</p>
-                      <p>Ngong Lane Plaza,Ngong Road</p>
+                      <p>Kenyatta International Conference Centre (K.I.C.C)</p>
                       <p>Nairobi,Nairobi County</p>
                       <a href="">View Map</a>
                       <br>
+                      <br>
                       <li><b>Event Description</b></li>
-                      <p>This event helps developers understand how to effectively use git tools to help them advance their careers.</p>
-                      <li><b>Charges:</b></li>
-                      <p>Free for all</p>
-                    </ul>
-                    <div class="joinbutton">
-                      <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
-                      <div id="btn-join" class="modal">
-                        <span class="close">&times;</span>
-                        <form action="" method="get" target="_blank">
-                          <p>First name:<input type="text2" name="fname"><br></p>
-                          <p>Last name:<input type="text2" name="lname"><br></p>
-                          <p>Contact: &nbsp &nbsp<input type="text2" name="contact"><br></p>
-                          <input type="submit" value="Submit">
-                        </form>
+                      <p>The talk is to learn more about global warming,an issue which humanity has to deal with for our own sakes!</p>
+                      <br>
+                      <li><b>Requirements:</b></li>
+                      <p>An open mind on this issue.</p>
+                      <br>
+                      <div class="btn-join">
+                        <button class="btn" type="button" name="button">JOIN EVENT</button>
                       </div>
-                    </div>
+                      <br>
+                    </ul>
                   </div>
                 </div>
                   <div class="col-md-2">
-                    <p class="event4"><b>4.Women In Tech Workshop 2018</b></p>
-                    <img src="image/art/art3.jpg" alt="" width="200">
+                    <p class="event4"><b>4.Marine World Expo</b></p>
+                    <img src="image/edu/marine.jpg" width="200px" height="200px" alt="">
                   </div>
                   <div id="EVENT4">
                     <div class="col-md-3">
                       <ul>
                         <li><b>Date and Time</b></li>
-                        <p>Wednesday,30th May 2018</p>
+                        <p>Saturday,9th June 2018</p>
                         <p>6:30pm-9:00pm</p>
+                        <br>
                         <li><b>Location:</b></li>
-                        <p>Kenyatta International Conference Centre(KICC),</p>
-                        <p>Harambee Ave,</p>
-                        <p>Nairobi,Nairobi County.</p>
+                        <p>Sanana Conference Centre and Holiday Resort</p>
+                        <p>Mombasa County.</p>
                         <a href="">View Map</a>
                         <br>
+                        <br>
                         <li><b>Event Description:</b></li>
-                        <p>The purpose of this event is to bring together women from different diversities and backgrounds to promote technology among them in order to enhance and better their future lives.</p>
-                        <li><b>Charges:</b></li>
-                        <p>Free</p>
+                        <p>The purpose of this event is to teach the youth of our nation more about the vast marine world.</p>
+                        <br>
+                        <li><b>Requirements:</b></li>
+                        <p>There are no requirements for this event.</p>
+                        <br>
+                        <div class="btn-join">
+                          <button class="btn" type="button" name="button">JOIN EVENT</button>
+                        </div>
                         <br>
                       </ul>
-
                     </div>
                   </div>
                 </div>
@@ -243,8 +268,8 @@
                 </a>
             </div>
           </div>
-        </div>
-          <!-- END of Control -->
+              <!-- END of Control -->
+            </div>
         </div>
       </div>
     </div>
