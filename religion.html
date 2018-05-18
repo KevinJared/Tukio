@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>2Kio</title>
+  </head>
+  <body>
+    <div class="topnav" style="background-color: #d6d6c2">
+        <a href="home.html">HOME</a> &nbsp &nbsp &nbsp
+        <a href="about.html">ABOUT</a>
+      <div class="search">
+        <form action="https://devcentral.f5.com/questions/sorry-page-26743">
+          <input type="text1" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search">Search</i></button>
+        </form>
+      </div>
+    </div>
+    <div class="header" style="background-image: url(image/religion.jpg)">
+      <img src="image/logo.png" alt="" width="160px" style="border-radius: 50%";>
+      <h1>2Kio Events</h1>
+    </div>
+
+    <!--this is the begining of section -->
+    <div class="container-fluid">
+      <div class="row">
+        <div id="sidebar" class="col-md-2">
+          <div class="btn-create-event">
+            <button class="btncreate" class="btn" type="button" name="button">CREATE EVENT</button>
+            <div class="content">
+            <form action="" method="get" target="_blank">
+              <p>CATEGORY:<select name="#">
+                <option value="#">EDUCATION</option>
+                <option value="#">ART</option>
+                <option value="#">TECHNOLOGY</option>
+                <option value="#">HEALTH</option>
+                <option value="#">RELIGION</option>
+                <option value="#">SPORTS</option>
+              </select><br></p>
+              <p>IMAGE: <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 accept="image/*"></p>
+              <p>NAME OF EVENT:<input type="text2" name="#"><br></p>
+              <p>LOCATION: &nbsp &nbsp<input type="text2" name="#"><br></p>
+              <p>Event Description:<input type="text2" name="#"><br></p>
+              <p>CHARGES:<input type="text2" name="#"><br></p>
+              <input onClick="conf()" type="submit" value="Submit">
+              </form>
+            </div>
+            <script>
+              var coll = document.getElementsByClassName("btncreate");
+              var i;
+
+              for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var content = this.nextElementSibling;
+                      if (content.style.display === "block") {
+                          content.style.display = "none";
+                      } else {
+                          content.style.display = "block";
+                      }
+                  });
+              }
+              </script>
+          </div>
+          <br>
+          <br>
+
+          <br>
+          <div class="events">
+            <p class="events">EVENTS</p>
+              <a href="education.html"><button class="btn2" type="button" name="button">EDUCATION</button></a>&nbsp
+              <a href="art.html"><button class="btn2" type="button" name="button">ART</button></a>&nbsp
+              <a href="technology.html"><button class="btn2" type="button" name="button">TECHNOLOGY</button></a>&nbsp
+              <a href="health.html"><button class="btn2" type="button" name="button">HEALTH</button></a>&nbsp
+              <a href="religion.html"><button class="btn2" type="button" name="button">RELIGION</button></a>&nbsp
+              <a href="sports.html"><button class="btn2" type="button" name="button">SPORTS</button></a>&nbsp
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="health" class="col-md-12">
+              <h2 class="health"><b>RELIGION EVENTS</b></h2>
+              <br>
+                <div class="col-md-2">
+                  <p class="event1"><b>1.BABY DEDICATION</b></p>
+                  <img src="image/religion/baby-dedication.jpg" width="200px;">
+                  <strong>Overview</strong>
+                  <p>This event is for dedicating the babies. Bring them for this awesome experience.</p>
+                </div>
+                <div id="eventhealth1">
+                  <div class="col-md-3">
+                    <ul>
+                      <br>
+                      <li><b>Date and Time</b></li><br>
+                      <p>Saturday,19th May 2018</p>
+                      <p>10:00am-5:30pm</p><br>
+                      <li><b>Location:</b></li><br>
+                      <p>Kenya Wildlife Services Headquarters</p>
+                      <p>Nairobi,Nairobi County</p><br>
+                      <a href="">View Map</a><br>
+                      <br>
+                      <li><b>Charges:</b></li><br>
+                      <p><strong>Advance:</strong>Ksh 600</p>
+                      <p><strong>Gate: </strong>Ksh 1000</p>
+                    </ul>
+                    <div class="joinbutton">
+                      <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
+                      <div id="btn-join" class="modal">
+                        <span class="close">&times;</span>
+                        <form action="" method="get" target="_blank">
+                          <p>First name:<input type="text2" name="fname"><br></p>
+                          <p>Last name:<input type="text2" name="lname"><br></p>
+                          <p>Contact: &nbsp &nbsp<input type="text2" name="contact"><br></p>
+                          <input type="submit" value="Submit">
+                        </form>
+                      </div>
+                      <script type="text/javascript">
+                          // Get the btn-join
+                          var modal = document.getElementById('btn-join');
+
+                          // Get the button that opens the btn-join
+                          var btn = document.getElementById("myBtn");
+
+                          // Get the <span> element that closes the btn-join
+                          var span = document.getElementsByClassName("close")[0];
+
+                          // When the user clicks the button, open the btn-join
+                          btn.onclick = function() {
+                            modal.style.display = "block";
+                          }
+                          // When the user clicks on <span> (x), close the btn-join
+                          span.onclick = function() {
+                            modal.style.display = "none";
+                          }
+                          // When the user clicks anywhere outside of the btn-join, close it
+                          window.onclick = function(event) {
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          }
+                      </script>
+                    </div>
+                  </div>
+                </div>
+                <!-- The btn-join -->
+                <div class="col-md-2">
+                  <p class="event1"><b>2.EID-UL-FITR</b></p>
+                  <img src="image/religion/eid-festival.jpg" width="200px;">
+                  <strong>Overview</strong>
+                  <p>We are one people. Let's come together and celebrate.</p>
+
+                </div>
+                <div id="eventhealth1">
+                  <div class="col-md-3">
+                    <ul>
+                      <br>
+                      <li><b>Date and Time</b></li><br>
+                      <p>Saturday,2nd June 2018</p>
+                      <p>10:00am-5:30pm</p><br>
+                      <li><b>Location:</b></li><br>
+                      <p>Tudor Sub-County's Kaa Chonjo Grounds</p>
+                      <p>Mombasa,Mombasa County</p><br>
+                      <a href="">View Map</a><br>
+                      <br>
+                      <li><b>Charges:</b></li><br>
+                      <p><strong>FREE</strong><br>
+                    </ul>
+                  <button id="myBtn" class="btn" type="button" name="button">JOIN EVENT</button>
+                    <div id="btn-join" class="modal">
+                      <span class="close">&times;</span>
+                      <form action="" method="get" target="_blank">
+                        <p>First name:<input type="text2" name="fname"><br></p>
+                        <p>Last name:<input type="text2" name="lname"><br></p>
+                        <p>Contact: &nbsp &nbsp<input type="text2" name="contact"><br></p>
+                        <input type="submit" value="Submit">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="row">
+                <div class="health" class="col-md-12">
+                    <div class="col-md-2">
+                      <p class="event1"><b>3.BAPTISMAL EVENT</b></p>
+                      <img src="image/religion/baptism.jpg" width="200px;">
+                      <strong>Overview</strong>
+                      <p>This event will feature <b>Pr. T.D.Jakes</b> come one ,come all.</p>
+                    </div>
+                    <div id="eventhealth1">
+                      <div class="col-md-3">
+                        <ul>
+                          <br>
+                          <li><b>Date and Time</b></li><br>
+                          <p>Saturday,7th May 2016</p>
+                          <p>10:00am-5:30pm</p><br>
+                          <li><b>Location:</b></li><br>
+                          <p>Biblica Kenya</p>
+                          <p>Nairobi,Nairobi County</p><br>
+                          <a href="">View Map</a><br>
+                          <br>
+                          <li><b>Charges:</b></li><br>
+                          <p><strong>Support:</strong>Ksh 200</p>
+
+                        </ul>
+                        <div class="btn-join">
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn" type="button" name="button">JOIN EVENT</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <p class="event1"><b>4.DIWALI</b></p>
+                      <img src="image/religion/diwali.jpg" width="200px;">
+                      <strong>Overview</strong>
+                      <p>Shree Lohana Mahajan Mandal, Nairobi brings to you the Annual Diwali Cottage Fair 2017 with lots of activities to participate in. </p>
+                    </div>
+                    <div id="eventhealth1">
+                      <div class="col-md-3">
+                        <ul>
+                          <br>
+                          <li><b>Date and Time</b></li><br>
+                          <p>Saturday,24th June, 2017</p>
+                          <p>10:00am-5:30pm</p><br>
+                          <li><b>Location:</b></li><br>
+                          <p>Outspan Medical College</p>
+                          <p>Nairobi,Nairobi County</p><br>
+                          <a href="">View Map</a><br>
+                          <br>
+                          <li><b>Charges:</b></li><br>
+                          <p><strong>FREE</p><br>
+                        </ul>
+                        <div class="btn-join">
+                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn" type="button" name="button">JOIN EVENT</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="ads" class="col-md-12">
+                <p>ADS</p>
+                &nbsp
+                <div class="carousel-inner" role="listbox"
+                   <div class="item active">
+                     <img src="image/ads/ad1.jpg" alt="" width="200px" style="border-radius: 10%">
+                     <div class="carousel-caption">
+                       <h4>Chania</h4>
+                     </div>
+                   </div>
+                </div>
+
+                <!-- Control -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+          </div>
+              <!-- END of Control -->
+            </div>
+        </div>
+      </div>
+    </div>
+      <!--this is the end of section -->
+
+      <!--this is the begining of footer -->
+      <div class="footer" style="background-color: #cce6ff">
+        <div class="col-md-12">
+          <div class="col-md-4" style="border-right: 1px solid #ff8000;">
+            <h3>Feedback</h3>
+            <form action="index.html">
+              Email: &nbsp &nbsp &nbsp<input type="text1" placeholder="Email address.." name="Feedback">
+              <br>
+              <br>
+              Comment:<input type="text" placeholder="Comment.." name="Feedback">
+              <br>
+              <button onClick="conf()" type="button" name="button">SUBMIT</button>
+            </form>
+          </div>
+          <div class="col-md-4" id="social">
+            <h3>Contacts</h3>
+            <img src="image/logo.png" alt="" width="70px" style="border-radius: 50%"> <br>
+              <br> <a href="#"><img src="image/facebook.png" alt="facebook" width="8%"></a>
+              <a href="#"><img src="image/twitter.png" alt="twitter" width="8%"></a>
+              <a href="#"><img src="image/pinterest.png" alt="pinterest" width="8%"></a>
+              <br>
+              <h4>Copyright &copy Tukio 2018</h4>
+          </div>
+          <div class="col-md-4" style="border-left: 1px solid #ff8000;">
+            <h3>Help Desk</h3>
+            <p><img src="image/whatsapp.png" alt="" style="width:30px"> &nbsp +254721495395</p>
+            <p><img src="image/email.png" alt="" style="width:30px"><a href="#"> &nbsp kevinjaredkip@gmail.com</a></p>
+              <br>
+              &nbsp &nbsp
+            <img src="image/footer/gift.jpg" alt="" width="75" style="border-radius: 50%">
+            <img src="image/footer/kev.jpg" alt="" width="95" style="border-radius: 50%">
+            <img src="image/footer/edith.jpg" alt="" width="95" style="border-radius: 50%">
+            <img src="image/footer/karis.png" alt="" width="75" style="border-radius: 50%">
+          </div>
+        </div>
+      </div>
+      <!--this is the begining of footer -->
+  </body>
+</html>
